@@ -1,0 +1,16 @@
+string s = "abcdec";
+    bool flag = false; //bool is man
+
+    for (int i = 0; i < s.length(); i++)
+    {
+        for (int j = 0; j < s.length(); j++)
+        {
+            if ( s[i] == s[j] && i != j && flag == false )
+            {
+                cout << s[j];
+                flag = true;
+
+            }
+        }
+           
+    }
