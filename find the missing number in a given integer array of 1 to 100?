@@ -1,0 +1,20 @@
+ private int[] arr = new int[100];
+    void Start()
+    {
+        for (int i = 0; i < 100; i++) // inishlize an arry
+        {
+            if(i != 10)
+            {
+                arr[i] = i;
+            }
+
+        }
+
+        for (int i = 0; i < 100; i++) // find missing from array
+        {
+            if(arr[i] != i)
+            {
+                Debug.Log(i);
+            }
+        }
+    }
