@@ -1,0 +1,15 @@
+ private int[] arr = { 1, 2, 3 , 4, 5 };
+    void Start()
+    {
+        for (int i =0; i < arr.Length; i++)
+        {
+           for(int j = i+1; j < arr.Length; j++)
+           {
+                if(arr[i] + arr[j] == 7)
+                {
+                    Debug.Log(arr[i]);
+                    Debug.Log(arr[j]);
+                }
+            }
+        }
+    }
