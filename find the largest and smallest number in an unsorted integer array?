@@ -1,0 +1,21 @@
+private int[] arr = { 10, 12, 1 , 3, 3 };
+    int min;
+    int max;
+    void Start()
+    {
+        min = arr[0];
+        max = arr[0];
+        for (int i =0; i < arr.Length; i++)
+        {
+            if(max < arr[i + 1])
+            {
+                max = arr[i + 1];
+            }
+            if (min > arr[i + 1])
+            {
+                min = arr[i + 1];
+            }
+        }
+        Debug.Log(min);
+        Debug.Log(max);
+    }
