@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  string s = "osamaos";
+  bool flag = false; // flag is main and down condistion also
+    for (int i = 0; i < s.length(); i++)
+    {
+        for (int j = 0; j < s.length(); j++)
+        {
+            if (s[i] == s[j] && i != j && flag == false)
+            {
+              flag = true;
+              break;
+            }
+            
+        }
+        
+        if (flag == true)
+        {
+          flag = false;
+        }
+        else{
+          cout << s[i];
+        }
+        
+    }
+}
+
